@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
+  m_Name: EmperrorArgall
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: Argall von Minos
+  baseSprite: {fileID: -7598041566568884402, guid: e2427d10fce4ec540a180466130b75b3, type: 3}
+  fullBackstory: "Lakap: G\xFCneyin B\xFCy\xFCk \u0130mparatoru / Refah Getiren /
+    Zulm\xFCn Habercisi\n\r\nGe\xE7mi\u015F: \xD6nceki hayat\u0131nda \xFClkesine
+    ve halk\u0131na refah getirmi\u015F, fakat sava\u015Ft\u0131\u011F\u0131 \xFClkelere
+    zulmetmi\u015F ve k\xF6lele\u015Ftirmi\u015F bir imparator.\n\r\n\xD6l\xFCm \u015Fekli:
+    Suikast.\n\r\nSon s\xF6z\xFC: \"Sen de mi Br\xFCt\xFCs...\""
+  soulCoins: 17
+  dialogueLines:
+  - text: "Merhaba. Ben Y\xFCce \u0130mparator Argall von Minos. "
+    emotion: 0
+    expression: {fileID: -8628307796927150301, guid: b8c2e6db68f7e3f4abc0dfccf65710ba, type: 3}
+  - text: "Buraya reenkarne olmaya geldim. Umar\u0131m do\u011Fru karar\u0131 verirsin."
+    emotion: 0
+    expression: {fileID: -8628307796927150301, guid: b8c2e6db68f7e3f4abc0dfccf65710ba, type: 3}
+  optionA:
+    lifeLabel: 17
+    lifeDescription: "Soylu bir ailede yeniden do\u011F"
+    coinCost: 17
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
+  optionB:
+    lifeLabel: 2
+    lifeDescription: "\u0130mparatorluk alt\u0131nda y\xF6netilen kukla bir \xFClkede
+      k\xF6le olarak do\u011F"
+    coinCost: 2
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0

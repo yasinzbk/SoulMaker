@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
+  m_Name: BasMelek
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: "Ba\u015F Melek"
+  baseSprite: {fileID: -8321102221490951993, guid: 323834de36860e643b9feb886df69d80, type: 3}
+  fullBackstory: "ANON\u0130M"
+  soulCoins: 1
+  dialogueLines:
+  - text: "Merhaba! Sen yeni eleman olmal\u0131s\u0131n."
+    emotion: 0
+    expression: {fileID: 7417498029127908629, guid: 5e99eab02df607d4f89986b620c0b6f6, type: 3}
+  - text: "Ho\u015F geldin... san\u0131r\u0131m. Neyse, bo\u015F lafa gerek yok,
+      i\u015Fi k\u0131saca sana \xF6zetleyece\u011Fim."
+    emotion: 0
+    expression: {fileID: 545875093725613961, guid: 7374b5f07dd529a4f8daa5f5f8e38c56, type: 3}
+  - text: "Ah... bir de ba\u015Flamadan \xF6nce neden burada oldu\u011Funa az\u0131c\u0131k
+      de\u011Finmem gerek."
+    emotion: 0
+    expression: {fileID: 3432582381386852895, guid: 5c06c27a70709b54990484fa39e28bf4, type: 3}
+  - text: "Resmi bir Kadim Yarg\u0131\xE7 olmadan \xF6nce 3 g\xFCnl\xFCk bir de\u011Ferlendirme
+      s\xFCrecine gireceksin."
+    emotion: 0
+    expression: {fileID: 7417498029127908629, guid: 5e99eab02df607d4f89986b620c0b6f6, type: 3}
+  - text: "Bu 3 g\xFCn\xFCn sonunda seni kontrole gelece\u011Fim ve kal\u0131c\u0131
+      \xE7al\u0131\u015Fan m\u0131 olacaks\u0131n yoksa kovulacak m\u0131s\u0131n,
+      ona karar verece\u011Fim."
+    emotion: 0
+    expression: {fileID: 545875093725613961, guid: 7374b5f07dd529a4f8daa5f5f8e38c56, type: 3}
+  - text: "Hah, umar\u0131m kovulmazs\u0131n \xE7aylak..."
+    emotion: 0
+    expression: {fileID: 438895471204581479, guid: 70fee714446d01b448ba3fe8ced06a77, type: 3}
+  optionA:
+    lifeLabel: 0
+    lifeDescription: "Devam Etmek \u0130\xE7in T\u0131kla"
+    coinCost: 0
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
+  optionB:
+    lifeLabel: 0
+    lifeDescription: "Devam Etmek \u0130\xE7in T\u0131kla"
+    coinCost: 0
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
