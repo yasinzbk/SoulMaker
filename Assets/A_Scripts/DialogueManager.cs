@@ -59,17 +59,41 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        // Ekrana týklandýðýnda veya Space basýldýðýnda
-        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && isDialogueActive)
+        //// Ekrana týklandýðýnda veya Space basýldýðýnda
+        //if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && isDialogueActive)
+        //{
+        //    if (isTyping)
+        //    {
+        //        CompleteText(); // Yazý bitmediyse anýnda bitir
+        //    }
+        //    else
+        //    {
+        //        ShowLine(); // Yazý bittiyse sonrakine geç
+        //    }
+        //}
+
+        if (!isDialogueActive) return;
+
+        // Sadece boþluk tuþu ile de geçmek istersen klavye kontrolü burada kalabilir
+        // Fare kontrolünü tamamen kaldýrdýk!
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (isTyping)
-            {
-                CompleteText(); // Yazý bitmediyse anýnda bitir
-            }
-            else
-            {
-                ShowLine(); // Yazý bittiyse sonrakine geç
-            }
+            OnDialogueAreaClicked();
+        }
+    }
+
+    // --- YENÝ METOD: Görünmez butona basýldýðýnda bu çalýþacak ---
+    public void OnDialogueAreaClicked()
+    {
+        if (!isDialogueActive) return;
+
+        if (isTyping)
+        {
+            CompleteText(); // Yazý bitmediyse anýnda bitir
+        }
+        else
+        {
+            ShowLine(); // Yazý bittiyse sonrakine geç
         }
     }
 

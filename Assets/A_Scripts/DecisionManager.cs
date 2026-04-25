@@ -26,6 +26,9 @@ public class DecisionManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scrollALabel; // Sol parþömen TMP
     [SerializeField] private TextMeshProUGUI scrollBLabel; // Sað parþömen TMP
 
+    [SerializeField] private TextMeshProUGUI scrollACoin; // Sol parþömen TMP
+    [SerializeField] private TextMeshProUGUI scrollBCoin; // Sað parþömen TMP
+
     // Parþömenlerin baþlangýç yerlerini tutmak için (Animasyon sonrasý geri dönmek için)
     private Vector2 scrollAStartPos;
     private Vector2 scrollBStartPos;
@@ -37,6 +40,11 @@ public class DecisionManager : MonoBehaviour
     [SerializeField] private List<SoulResult> allResults = new List<SoulResult>();
 
     private bool isProcessing = false;
+
+    private Tween idleTweenA;
+    private Tween idleTweenB;
+    [SerializeField] private float idleAmount = 15f; // Sallanma mesafesi
+    [SerializeField] private float idleDuration = 2f; // Sallanma hýzý
 
     private void Awake()
     {
@@ -58,6 +66,9 @@ public class DecisionManager : MonoBehaviour
 
     private void ResetJudgementUI()
     {
+        idleTweenA?.Kill();
+        idleTweenB?.Kill();
+
         // Sütunu ekranýn altýna gönder
         columnRect.anchoredPosition = new Vector2(0, -1000f);
         scrollsRoot.SetActive(false);
@@ -120,10 +131,32 @@ public class DecisionManager : MonoBehaviour
         scrollALabel.text = currentSoulData.optionA.lifeLabel;
         scrollBLabel.text = currentSoulData.optionB.lifeLabel;
 
+        scrollACoin.text = currentSoulData.optionA.coinCost.ToString();
+        scrollBCoin.text = currentSoulData.optionB.coinCost.ToString();
+
         // Parþömenleri aç ve bir animasyonla göster (Scale Up)
         scrollsRoot.SetActive(true);
         scrollsRoot.transform.localScale = Vector3.zero;
-        scrollsRoot.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
+        //scrollsRoot.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack);
+
+        // Parþömenler açýlýnca Idle animasyonunu baþlat
+        scrollsRoot.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack).OnComplete(() => {
+            StartIdleAnimations();
+        });
+    }
+
+    private void StartIdleAnimations()
+    {
+        // Sol parþömen için sonsuz döngü sallanma
+        idleTweenA = scrollARect.DOAnchorPosY(scrollARect.anchoredPosition.y + idleAmount, idleDuration)
+            .SetEase(Ease.InOutSine)
+            .SetLoops(-1, LoopType.Yoyo);
+
+        // Sað parþömen için (biraz gecikmeli ki senkronize olmasýnlar, daha doðal durur)
+        idleTweenB = scrollBRect.DOAnchorPosY(scrollBRect.anchoredPosition.y + idleAmount, idleDuration)
+            .SetEase(Ease.InOutSine)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetDelay(0.2f);
     }
 
     public void OnScrollSelected(int index) // 0: Option A, 1: Option B
@@ -181,6 +214,9 @@ public class DecisionManager : MonoBehaviour
 
     public void OnPointerEnterScrollA()
     {
+        idleTweenA.Pause(); // Sallanmayý durdur
+        scrollARect.DOScale(1.15f, 0.3f).SetEase(Ease.OutBack); // Büyüt
+
         // Sol parþömen açýklamasý üst TMP'ye anýnda yazýlýr (veya Typewriter ile)
         //descriptionTextTarget.text = currentSoulData.optionA.lifeDescription;
         OpenDialoguePanel(currentSoulData.optionA.lifeDescription); // Parþömen A'ya gelince panel açýlýp açýklama gösterilsin
@@ -188,6 +224,9 @@ public class DecisionManager : MonoBehaviour
 
     public void OnPointerEnterScrollB()
     {
+        idleTweenB.Pause(); // Sallanmayý durdur
+        scrollBRect.DOScale(1.15f, 0.3f).SetEase(Ease.OutBack); // Büyüt
+
         //descriptionTextTarget.text = currentSoulData.optionB.lifeDescription;
         OpenDialoguePanel(currentSoulData.optionB.lifeDescription); // Parþömen B'ye gelince panel açýlýp açýklama gösterilsin
     }
@@ -196,6 +235,13 @@ public class DecisionManager : MonoBehaviour
     {
         descriptionTextTarget.text = ""; // Fare gidince metni sil
             descriptionPanel.SetActive(false); // Paneli kapat
+
+        // Eski boyuta dön ve sallanmaya devam et
+        scrollARect.DOScale(1f, 0.3f).SetEase(Ease.OutSine);
+        scrollBRect.DOScale(1f, 0.3f).SetEase(Ease.OutSine);
+
+        idleTweenA.Play();
+        idleTweenB.Play();
     }
 
     void OpenDialoguePanel(string dialogue)

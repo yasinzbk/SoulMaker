@@ -14,6 +14,8 @@ public class BackstoryManager : MonoBehaviour
     public TextMeshProUGUI backstoryText;
     public TextMeshProUGUI coinText;
 
+    public TextMeshProUGUI nameText; // Ruhun ismi için ek bir text (isteðe baðlý)
+
     private float screenWidth = 1920f; // Canvas scaler referansýnla ayný olmalý
 
     void Start()
@@ -49,6 +51,7 @@ public class BackstoryManager : MonoBehaviour
 
     void UpdateBackstoryUI(SoulData data)
     {
+        nameText.text = data.soulName; // Ruhun ismini göster   
         soulPortrait.sprite = data.baseSprite;
         backstoryText.text = data.fullBackstory;
         coinText.text =/* "Ýyilik Parasý: " +*/ data.soulCoins.ToString();
