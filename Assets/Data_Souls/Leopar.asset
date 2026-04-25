@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
+  m_Name: Leopar
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: Prens Rawfield
+  baseSprite: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  fullBackstory: "Lakap: Kay\u0131p Hanedan\u0131n Son Varisi / Beneklilerin H\xFCk\xFCmdar\u0131\n\r\nGe\xE7mi\u015F:
+    \xD6nceki hayat\u0131nda leoparlar \xFCzerinde h\xFCk\xFCm s\xFCren bir prensti
+    ve taht\u0131n son varisiydi.\n\r\n\xD6l\xFCm \u015Fekli: Hayvan krall\u0131\u011F\u0131nda
+    bir sava\u015Fta \xF6ld\xFC.\n\r\nSon s\xF6z\xFC: \"ROOOAARRRR, SEN\u0130 HA\u0130N
+    P\u0130\xC7!\""
+  soulCoins: 12
+  dialogueLines:
+  - text: Sen... bir memur musun?
+    emotion: 0
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "burnunu \xE7eker) Anl\u0131yorum, bizim gibi bir fani de\u011Filsin yani."
+    emotion: 3
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "Daha \xF6nce hi\xE7 kadim yarg\u0131\xE7 g\xF6rmemi\u015Ftim\u2026"
+    emotion: 3
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "Hmm, bu arada bu diyarda koku duyumu bozan bir g\xFC\xE7 var."
+    emotion: 4
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "Az \xF6nce seni koklad\u0131\u011F\u0131mda daha farkl\u0131 kokuyordun..."
+    emotion: 0
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "Yoksa bu, siz \xF6l\xFCms\xFCzlere \xF6zel bir yetenek mi?"
+    emotion: 0
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: " Neyse, buraya bir kez daha do\u011Fmaya geldim."
+    emotion: 0
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "K\xFCllerimden... yeniden do\u011Fmaya."
+    emotion: 0
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  - text: "Bana yolu g\xF6ster, Yarg\u0131\xE7."
+    emotion: 0
+    expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+  optionA:
+    lifeLabel: 12
+    lifeDescription: "Onu bir Battle Beast olarak yeniden canland\u0131r "
+    coinCost: 12
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
+  optionB:
+    lifeLabel: 12
+    lifeDescription: "Onu s\u0131radan insan d\xFCnyas\u0131nda Avrupa vatanda\u015F\u0131
+      olarak yeniden canland\u0131r"
+    coinCost: 12
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0

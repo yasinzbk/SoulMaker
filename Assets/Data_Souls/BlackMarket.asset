@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
-  m_Name: Kuro
+  m_Name: BlackMarket
   m_EditorClassIdentifier: Assembly-CSharp::SoulData
   soulName: Kurourushi
   baseSprite: {fileID: 473940425889380243, guid: e56e282a722804d4a8570dcd86a682a9, type: 3}
