@@ -584,7 +584,25 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    EmbeddedLinux: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    GameCoreScarlett: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    GameCoreXboxOne: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Kepler: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    LinuxHeadlessSimulation: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Nintendo Switch: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Nintendo Switch 2: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    PS4: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    PS5: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    QNX: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Standalone: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    VisionOS: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    WebGL: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Windows Store Apps: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    XboxOne: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    iPhone: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    tvOS: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -681,7 +699,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 705857e8-e72a-4643-8b47-d8cf85a83294
   framebufferDepthMemorylessMode: 0
