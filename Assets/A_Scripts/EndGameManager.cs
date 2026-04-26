@@ -26,7 +26,7 @@ public class EndGameManager : MonoBehaviour
             
             // Kartın icindeki Image ve Text bilesenlerini bul (isimlerine göre)
             card.transform.Find("ResultImage").GetComponent<Image>().sprite = result.selectedLife.endingSprite;
-            card.transform.Find("ResultText").GetComponent<TextMeshProUGUI>().text = 
+            card.GetComponentInChildren<TextMeshProUGUI>().text = 
                 $"<b>{result.soul.soulName}</b>\n{result.selectedLife.endingText}";
             
             // Kucuk bir animasyonla kartı göster

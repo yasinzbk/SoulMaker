@@ -39,7 +39,7 @@ MonoBehaviour:
     endingSprite: {fileID: -7582364231757599730, guid: 7ddedc18c90b61541bdd2ec9b5ba073e, type: 3}
     endingText: "Tarik Amerika'da Afro-Amerikan olarak do\u011Fdu ve uzun bir s\xFCre
       \u0131rk\xE7\u0131l\u0131\u011Fa u\u011Frad\u0131, ama bir \u015Fekilde atlatmay\u0131
-      ba\u015Far\u0131p ba\u015Far\u0131l\u0131 bir vatanda\u015F oldu."
+      ba\u015Far\u0131p ba\u015Far\u0131l\u0131 bir vatanda\u015F oldu.\naaa\naaa\naaa\naaa\naaa\naaa\naaa\naa"
   optionB:
     lifeLabel: 5
     lifeDescription: "Afrika'da bir kabilede yeniden do\u011F"
