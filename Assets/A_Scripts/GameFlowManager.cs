@@ -67,6 +67,8 @@ public class GameFlowManager : MonoBehaviour
     private int currentSoulIndex = 0;
     private const int SOULS_PER_DAY = 3;
 
+    public List<SoulResult> allPickedResults = new List<SoulResult>();
+
     void Start()
     {
         UpdateHUD(); // Oyun baþlarken parayý yazdýr
@@ -76,6 +78,8 @@ public class GameFlowManager : MonoBehaviour
 
     public void ProcessDecision(SoulData soul, ChoiceLife choice)
     {
+        // ... ekonomi hesaplamalarý
+
         int gain = 0;
         string reportEntry = "";
 
@@ -96,6 +100,15 @@ public class GameFlowManager : MonoBehaviour
         dailyReports.Add(reportEntry);
 
         UpdateHUD(); // Her karar sonrasý ekrandaki parayý güncelle
+
+
+        // Kararý listeye ekleyelim
+        allPickedResults.Add(new SoulResult
+        {
+            soul = soul,
+            selectedLife = choice,
+            day = currentDay
+        });
 
         // Gelecek gün için ruh ekleme mantýðý
         if (choice.bonusSoul != null)
@@ -133,7 +146,41 @@ public class GameFlowManager : MonoBehaviour
     {
         totalPlayerCoins += dailyEarnings;
         // UI Manager'a gün sonu verilerini gönder
-        FindAnyObjectByType<DaySummaryUI>().ShowSummary(currentDay, dailyReports, dailyEarnings, totalPlayerCoins);
+        UpdateHUD(); // Kasaya net eklendi, HUD yenile
+
+        // EÐER OYUN BÝTTÝYSE (Sýrada ruh kalmadýysa)
+        if (CheckIfGameIsOver())
+        {
+            // Günlük özet yerine direkt FÝNAL ekranýný çaðýrýyoruz
+            FindAnyObjectByType<EndGameManager>().ShowFinalResults();
+        }
+        else
+        {
+            // Sýrada hala ruhlar var, normal gün özetini göster
+            FindAnyObjectByType<DaySummaryUI>().ShowSummary(currentDay, dailyReports, dailyEarnings, totalPlayerCoins);
+        }
+
+    }
+
+    private bool CheckIfGameIsOver()
+    {
+        // 1. Ana listede (initialSouls) sýrasý gelmemiþ ruh kaldý mý?
+        int alreadyProcessedMainSouls = currentDay * SOULS_PER_DAY;
+        bool isMainListFinished = alreadyProcessedMainSouls >= initialSouls.Count;
+
+        // 2. Gelecek günler için (bonus seçimlerden) bekleyen ruh var mý?
+        bool isFutureListEmpty = true;
+        foreach (int dayKey in futureSouls.Keys)
+        {
+            if (dayKey > currentDay) // Eðer bulunduðumuz günden sonraki bir güne ruh eklendiyse
+            {
+                isFutureListEmpty = false;
+                break;
+            }
+        }
+
+        // Eðer hem ana liste bitmiþse HEM DE gelecekte bekleyen hiçbir bonus ruh yoksa: OYUN BÝTMÝÞTÝR (true döndür)
+        return isMainListFinished && isFutureListEmpty;
     }
 
     public void StartNextDay()

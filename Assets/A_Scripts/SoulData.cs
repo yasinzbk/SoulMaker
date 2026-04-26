@@ -11,6 +11,10 @@ public class ChoiceLife
     [Header("Gelecek Etkisi")]
     public SoulData bonusSoul; // Bu seçilirse gelecek olan yeni ruh
     public int appearanceDayOffset; // Kaç gün sonra gelecek? (1 ise yarýn, 2 ise öbür gün)
+
+    [Header("Oyun Sonu Bilgileri")]
+    public Sprite endingSprite; // Karakterin son durum görseli
+    [TextArea(5, 10)] public string endingText; // Karakterin baþýna ne geldi?
 }
 
 [System.Serializable]

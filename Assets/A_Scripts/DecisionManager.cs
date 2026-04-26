@@ -173,13 +173,13 @@ public class DecisionManager : MonoBehaviour
         //Kararý GameFlowManager'a bildiriyoruz
         FindAnyObjectByType<GameFlowManager>().ProcessDecision(currentSoulData, selectedLife);
 
-        // Seçimi kaydet
-        allResults.Add(new SoulResult
-        {
-            soul = currentSoulData,
-            selectedLife = selectedLife,
-            day = FindAnyObjectByType<GameFlowManager>().currentDay
-        });
+        //// Seçimi kaydet
+        //allResults.Add(new SoulResult
+        //{
+        //    soul = currentSoulData,
+        //    selectedLife = selectedLife,
+        //    day = FindAnyObjectByType<GameFlowManager>().currentDay
+        //});
 
 
 

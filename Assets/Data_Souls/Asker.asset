@@ -36,9 +36,13 @@ MonoBehaviour:
     coinCost: 5
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -7582364231757599730, guid: 7ddedc18c90b61541bdd2ec9b5ba073e, type: 3}
+    endingText: "Bababa dsanf\xF6ans"
   optionB:
     lifeLabel: 5
     lifeDescription: "Afrika'da bir kabilede yeniden do\u011F"
     coinCost: 5
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 7742508237215608095, guid: a9c2eead9f3a93743a1bab2ea3a6f80b, type: 3}
+    endingText: anananannanana
