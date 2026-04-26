@@ -12,28 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
   m_Name: BlackMarket
   m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulName: Kurourushi
-  baseSprite: {fileID: 473940425889380243, guid: e56e282a722804d4a8570dcd86a682a9, type: 3}
-  fullBackstory: "Ge\xE7mi\u015F: \xD6nceki hayat\u0131nda terk edilmi\u015F bir
-    apartmanda ya\u015Fayan b\xF6cek.\n\r\n\xD6l\xFCm \u015Fekli: Ya\u015Fl\u0131l\u0131ktan.\n\r\nSon
-    s\xF6z\xFC: \"Wih\xF6mm Wih\xF6mm\""
-  soulCoins: 1
+  soulName: Serdar Tezcan
+  baseSprite: {fileID: 5315003884038144493, guid: e126acd8d71f38345804b9ec47d6c06f, type: 3}
+  fullBackstory: "DOLANDIRICININ TEK\u0130 D\u0130KKATL\u0130 OL"
+  soulCoins: 5
   dialogueLines:
-  - text: 'Wiikkk, wik wiikk wik wikk wiiikkk wiwik. '
-    emotion: 2
-    expression: {fileID: 6503322928917484476, guid: fd9e63c5172a30443b009c0078d94076, type: 3}
-  - text: Wikkiwik wiwi wiwiwik wikkk, wiwik wiik wiwik.
-    emotion: 1
-    expression: {fileID: -9094450571771943257, guid: c6d096b1f170d7149b319004c09526f2, type: 3}
+  - text: "SELAMLARRR BENN SERDARR TEZCANNNN NAMID\u0130\u011EER BLACK MARKET"
+    emotion: 0
+    expression: {fileID: 5315003884038144493, guid: e126acd8d71f38345804b9ec47d6c06f, type: 3}
+  - text: "MALLARIMA G\xD6Z ATMAK \u0130STERM\u0130S\u0130N ??"
+    emotion: 0
+    expression: {fileID: 8179892458493602980, guid: f2304ce7664feea448c58dba784a15bb, type: 3}
   optionA:
-    lifeLabel: 1
-    lifeDescription: "Bir sokak kedisi olarak yeniden do\u011F"
-    coinCost: 1
-    bonusSoul: {fileID: 0}
-    appearanceDayOffset: 0
-  optionB:
     lifeLabel: 0
-    lifeDescription: "Bir T\xFCrk genci olarak yeniden do\u011F"
+    lifeDescription: "Y\xFCr\xFC Git"
     coinCost: 0
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -491129543002743008, guid: 59295307caf614c458423306fb39f730, type: 3}
+    endingText: "Adam\u0131 Kavdun..."
+  optionB:
+    lifeLabel: 0
+    lifeDescription: "SAPIKK VARRRRRR G\xDCVENL\u0130KKKKK"
+    coinCost: 0
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
+    endingSprite: {fileID: -491129543002743008, guid: 59295307caf614c458423306fb39f730, type: 3}
+    endingText: "G\xFCvenlik ald\u0131 ve g\xF6t\xFCrd\xFC"

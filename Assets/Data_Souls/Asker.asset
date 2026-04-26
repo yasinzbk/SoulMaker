@@ -37,7 +37,9 @@ MonoBehaviour:
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
     endingSprite: {fileID: -7582364231757599730, guid: 7ddedc18c90b61541bdd2ec9b5ba073e, type: 3}
-    endingText: "Bababa dsanf\xF6ans"
+    endingText: "Tarik Amerika'da Afro-Amerikan olarak do\u011Fdu ve uzun bir s\xFCre
+      \u0131rk\xE7\u0131l\u0131\u011Fa u\u011Frad\u0131, ama bir \u015Fekilde atlatmay\u0131
+      ba\u015Far\u0131p ba\u015Far\u0131l\u0131 bir vatanda\u015F oldu."
   optionB:
     lifeLabel: 5
     lifeDescription: "Afrika'da bir kabilede yeniden do\u011F"
@@ -45,4 +47,6 @@ MonoBehaviour:
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
     endingSprite: {fileID: 7742508237215608095, guid: a9c2eead9f3a93743a1bab2ea3a6f80b, type: 3}
-    endingText: anananannanana
+    endingText: "Afrika'daki kabilesinde bir \xE7ocuk olarak do\u011Fan Tar\u0131k,
+      iyi bak\u0131lmamas\u0131 \xFCzerine daha bebekken engelli kald\u0131 ve kabilenin
+      delisi ilan edildi."

@@ -53,6 +53,10 @@ MonoBehaviour:
     coinCost: 8
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -834700764009628627, guid: 771be68cbf762cd4e9772ba0b9332fac, type: 3}
+    endingText: "Tekrar Ailesiyle birlikte olur ancak i\u015Fler daha tuhaft\u0131r
+      \xE7\xFCnk\xFC bu sefer babas\u0131 k\u0131z\u0131d\u0131r, o\u011Flu annesidir
+      ve e\u015Fi de abisidir\u2026"
   optionB:
     lifeLabel: 4
     lifeDescription: "Sava\u015F\u0131n ortas\u0131nda bir bebek olarak reenkarne
@@ -60,3 +64,5 @@ MonoBehaviour:
     coinCost: 4
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 1792722197823829547, guid: c577c41b4c0c06b4bb809c9bf41ad172, type: 3}
+    endingText: "Do\u011Fdu\u011Fu hastaneye f\xFCze d\xFC\u015Fer ve \xF6l\xFCr\u2026"

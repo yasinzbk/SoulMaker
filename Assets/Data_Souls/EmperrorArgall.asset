@@ -33,6 +33,11 @@ MonoBehaviour:
     coinCost: 17
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 3938364124659942936, guid: 297ca39dfdadee442b555449fa15bfa8, type: 3}
+    endingText: "Do\u011Fdu\u011Fu soylu ailede yeniden imparator olma \u015Fans\u0131
+      vard\u0131, ancak \xE7ok \xFC\u015Fenge\xE7 bir insand\u0131 ve potansiyelini
+      heba etmekten ba\u015Fka bir \u015Fey yapmad\u0131. Sonucunda taht i\xE7in
+      kavga eden karde\u015Fleri taraf\u0131ndan suikaste kurban gitti\u2026"
   optionB:
     lifeLabel: 2
     lifeDescription: "\u0130mparatorluk alt\u0131nda y\xF6netilen kukla bir \xFClkede
@@ -40,3 +45,15 @@ MonoBehaviour:
     coinCost: 2
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -7598041566568884402, guid: e2427d10fce4ec540a180466130b75b3, type: 3}
+    endingText: "K\xF6le olarak do\u011Fdu\u011Fu andan itibaren her g\xFCn\xFC i\u015Fkence
+      gibi olan bu adam\u0131n, bu kaderin alt\u0131nda ezilece\u011Fini sanm\u0131\u015F
+      olabilirsiniz. Lakin o, hayat\u0131 boyunca her zorlu\u011Fa g\xF6\u011F\xFCs
+      gerip k\xF6lelikten kurtularak imparatorlu\u011Fu devirecek bir devrim ordusu
+      kurmay\u0131 ba\u015Farm\u0131\u015F ve imparatorlu\u011Fu devirip \xFClkesinde
+      cumhuriyeti ilan etmi\u015Ftir. Bunun \xFCst\xFCne, \xFClkesine refah getirmekle
+      kalmam\u0131\u015F; zulm\xFC tatm\u0131\u015F biri olarak sava\u015F kar\u015F\u0131t\u0131
+      bir tutum sergilemi\u015F ve b\xFCy\xFCk bar\u0131\u015F ve refah devriminin
+      \xF6nc\xFCs\xFC olmu\u015Ftur. Bulundu\u011Fu d\xFCnyay\u0131 tamamen de\u011Fi\u015Fime
+      s\xFCr\xFCkleyerek 80'lerinde emekli olmu\u015F ve huzurlu bir g\xF6l evinde
+      hayata g\xF6zlerini yummu\u015Ftur."
