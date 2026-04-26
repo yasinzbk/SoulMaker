@@ -48,9 +48,19 @@ MonoBehaviour:
     coinCost: 8
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 2386738674390041516, guid: 4566f7fe23a73c7478ddd1e6377e2d7b, type: 3}
+    endingText: "K\u0131z\u0131n\u0131n yan\u0131nda bir k\xF6pek olarak reenkarne
+      oldu, fakat k\u0131z\u0131na hi\xE7 yard\u0131mc\u0131 olamad\u0131. K\u0131z\u0131
+      ailesiz kald\u0131 ve yetimhaneye geri al\u0131nd\u0131; Yuki onun yan\u0131nda
+      asla olamad\u0131. D\u0131\u015Far\u0131da kimse onu beslemedi\u011Fi i\xE7in
+      a\xE7l\u0131ktan \xF6ld\xFC\u2026"
   optionB:
     lifeLabel: 3
     lifeDescription: "Japonya'da zengin bir ailede yeniden do\u011F"
     coinCost: 3
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -42354882922023735, guid: 610009c93ffb5ea4a80c5bcde16f04d1, type: 3}
+    endingText: "Hayat\u0131n\u0131 refah i\xE7inde s\xFCrd\xFCr\xFCr ve iyili\u011Finden
+      \xF6d\xFCn vermez. Bu sefer de terzili\u011Fe devam eden Yuki, ya\u015Flan\u0131p
+      mutlu bir sonla \xF6l\xFCr."

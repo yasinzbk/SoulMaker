@@ -34,6 +34,12 @@ MonoBehaviour:
     coinCost: 0
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -4825247317447833179, guid: bf2f3b44877b98849a8e1c463dee7f61, type: 3}
+    endingText: "\xC7in'de fakir bir ailede erkek \xE7ocu\u011Fu olarak yeniden do\u011Far
+      ve k\xFC\xE7\xFCk ya\u015Fta \xE7ocuk i\u015F\xE7i yap\u0131l\u0131r, Temu'da
+      \xE7al\u0131\u015Ft\u0131r\u0131l\u0131r. B\xFCy\xFCd\xFC\u011F\xFCnde de \xE7ok
+      farkl\u0131 bir i\u015F yapmaz; bir fabrika i\u015F\xE7isi olarak 40'lar\u0131nda
+      kanserden hayata g\xF6zlerini yumar."
   optionB:
     lifeLabel: 3
     lifeDescription: "Hua Da\u011F\u0131 Mezhebinde taht i\xE7in en olas\u0131 varis
@@ -41,3 +47,9 @@ MonoBehaviour:
     coinCost: 3
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -7442742369925825077, guid: bdef9e4cb7049da4ebabbcb39f987426, type: 3}
+    endingText: "Mezhep i\xE7inde en olas\u0131 varis olmas\u0131 k\u0131skan\u0131l\u0131r
+      ve imparatori\xE7e ilan edilece\u011Fi t\xF6renden \xF6nce y\xFCz\xFCne s\xFCr\xFClen
+      makyaj pudras\u0131na zehir kat\u0131l\u0131r. Tam t\xF6renin ortas\u0131nda,
+      g\xF6zlerinden kanlar akarak ve \xE7\u0131\u011Fl\u0131klar i\xE7inde ac\u0131
+      \xE7ekerek \xF6l\xFCr\u2026"

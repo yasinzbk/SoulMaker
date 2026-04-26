@@ -31,9 +31,13 @@ MonoBehaviour:
     coinCost: 8
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -1967831488547962274, guid: deb83bdbd0429d34ca9a919abe0654fd, type: 3}
+    endingText: "\u0130\xE7eri al\u0131nda ama 2 g\xFCn sonra serbest b\u0131rak\u0131ld\u0131..."
   optionB:
     lifeLabel: 0
     lifeDescription: "Sakura Jam'de bir mikrop olarak yeniden do\u011F "
     coinCost: 0
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 8160386938422713931, guid: f4b9ba46a37c8f842aea8bcb86926138, type: 3}
+    endingText: "\u015Euanda Sunumu \u0130zliyor"

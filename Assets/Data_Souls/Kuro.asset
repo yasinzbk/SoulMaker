@@ -31,9 +31,14 @@ MonoBehaviour:
     coinCost: 1
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 473940425889380243, guid: e56e282a722804d4a8570dcd86a682a9, type: 3}
+    endingText: "Kedi olarak ba\u015Flad\u0131\u011F\u0131 hayat\u0131nda bir\xE7ok
+      canl\u0131y\u0131 kurtard\u0131 ve bir araba taraf\u0131ndan ezilerek \xF6ld\xFCr\xFCld\xFC\u2026"
   optionB:
     lifeLabel: 0
     lifeDescription: "Bir T\xFCrk genci olarak yeniden do\u011F"
     coinCost: 0
     bonusSoul: {fileID: 11400000, guid: 129f8672557bb734c821104e7a405e43, type: 2}
     appearanceDayOffset: 2
+    endingSprite: {fileID: 473940425889380243, guid: e56e282a722804d4a8570dcd86a682a9, type: 3}
+    endingText: "T\xFCrkeiyede ne ya\u015Fam\u0131\u015F olabilir ki bu hale gelsin..."

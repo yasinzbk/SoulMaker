@@ -54,6 +54,10 @@ MonoBehaviour:
     coinCost: 12
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -8263878613814959606, guid: 757161d6a9d291d4eaf07437383e3c93, type: 3}
+    endingText: "Bulundu\u011Fu evrende ona denk bir varl\u0131k kalmayana kadar
+      katleder en sonunda b\xFCt\xFCn bir evrende tek kal\u0131r ve kendi hayat\u0131na
+      son verir\u2026"
   optionB:
     lifeLabel: 12
     lifeDescription: "Onu s\u0131radan insan d\xFCnyas\u0131nda Avrupa vatanda\u015F\u0131
@@ -61,3 +65,15 @@ MonoBehaviour:
     coinCost: 12
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    endingText: "\u0130talya'da erkek \xE7ocu\u011Fu olarak yeniden do\u011Far ve
+      k\xFC\xE7\xFCk ya\u015Fta siyasete ilgi g\xF6sterir. \xDCniversitede avukatl\u0131k
+      okur ve mezun olunca ilk i\u015F siyasete girer. Bilerek muhalefette kal\u0131r
+      ve asla cumhurba\u015Fkan\u0131 olmaya \xE7al\u0131\u015Fmaz; muhalefette kal\u0131p
+      mevcut iktidar\u0131 dara sokman\u0131n ona cumhurba\u015Fkan\u0131 olmaktan
+      daha \xE7ok zevk verece\u011Fine inan\u0131r. Ama merak\u0131na yenik d\xFC\u015Fer
+      ve se\xE7imlerde \xF6ne \xE7\u0131karak iktidara gelir. \xDClkeyi 60 ya\u015F\u0131na
+      kadar y\xF6netir ve iyi durumda tutar; lakin bu i\u015F ve a\u011F\u0131rl\u0131\u011F\u0131
+      onu ya\u015Fl\u0131 bir buna\u011Fa \xE7evirmi\u015F, huysuz emekli dedenin
+      teki yapm\u0131\u015Ft\u0131r. \xC7evresinde kimse kalmaz ve 84 ya\u015F\u0131nda
+      tek ba\u015F\u0131na hayata g\xF6zlerini yumar."

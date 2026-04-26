@@ -53,9 +53,14 @@ MonoBehaviour:
     coinCost: 3
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -2889826238054235022, guid: 12cf5bd49e46fcc4cb9095bae84d6c9d, type: 3}
+    endingText: "do\u011Fdu\u011Fu anda \xF6ld\xFCr\xFCl\xFCr\u2026"
   optionB:
     lifeLabel: 3
     lifeDescription: "Arabistan'da bir k\u0131z \xE7ocu\u011Fu olarak do\u011F"
     coinCost: 3
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
+    endingSprite: {fileID: -2889826238054235022, guid: 12cf5bd49e46fcc4cb9095bae84d6c9d, type: 3}
+    endingText: "do\u011Fdu\u011Fu anda k\u0131z \xE7ocu\u011Fu oldu\u011Funu g\xF6ren
+      ailesi onu canl\u0131 canl\u0131 g\xF6mer\u2026"

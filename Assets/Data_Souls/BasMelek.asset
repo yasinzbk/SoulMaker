@@ -47,7 +47,8 @@ MonoBehaviour:
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
     endingSprite: {fileID: -8321102221490951993, guid: 323834de36860e643b9feb886df69d80, type: 3}
-    endingText: ndsnansnannda
+    endingText: "Evet \u015Fimdi sana verdi\u011Fin kararlar\u0131n sonu\xE7lar\u0131n\u0131
+      g\xF6sterelim bakal\u0131m..."
   optionB:
     lifeLabel: 0
     lifeDescription: "Devam Etmek \u0130\xE7in T\u0131kla"
@@ -55,4 +56,5 @@ MonoBehaviour:
     bonusSoul: {fileID: 0}
     appearanceDayOffset: 0
     endingSprite: {fileID: 545875093725613961, guid: 7374b5f07dd529a4f8daa5f5f8e38c56, type: 3}
-    endingText: "kahraman orduma bir g\xFC"
+    endingText: "Evet \u015Fimdi sana verdi\u011Fin kararlar\u0131n sonu\xE7lar\u0131n\u0131
+      g\xF6sterelim bakal\u0131m..."
