@@ -6,39 +6,39 @@ using DG.Tweening;
 public class BackstoryManager : MonoBehaviour
 {
     [Header("Paneller")]
-    public RectTransform mainScreen; // Ruhun olduðu ana ekran
-    public RectTransform backstoryPanel; // Bilgi ekraný
+    public RectTransform mainScreen; // Ruhun oldugu ana ekran
+    public RectTransform backstoryPanel; // Bilgi ekrani
 
     [Header("Bilgi Referanslarý")]
     public Image soulPortrait;
     public TextMeshProUGUI backstoryText;
     public TextMeshProUGUI coinText;
 
-    public TextMeshProUGUI nameText; // Ruhun ismi için ek bir text (isteðe baðlý)
+    public TextMeshProUGUI nameText; // Ruhun ismi icin ek bir text (istege bagli)
 
-    private float screenWidth = 1920f; // Canvas scaler referansýnla ayný olmalý
+    private float screenWidth = 1920f; // Canvas scaler referansinla ayni olmali
 
     void Start()
     {
-        // Baþlangýçta bilgi paneli solda gizli olmalý
+        // Baslangicta bilgi paneli solda gizli olmali
         backstoryPanel.anchoredPosition = new Vector2(-screenWidth, 0);
         backstoryPanel.gameObject.SetActive(false);
     }
 
-    // Yeþil oka basýnca çalýþacak
+    // Yesil oka basinca calisacak
     public void OpenBackstory()
     {
         backstoryPanel.gameObject.SetActive(true);
-        // Þu anki ruhun bilgilerini yükle
+        // Su anki ruhun bilgilerini yukle
         SoulData currentSoul = FindAnyObjectByType<DialogueManager>().currentSoul;
         UpdateBackstoryUI(currentSoul);
 
-        // Saða Kayma Animasyonu
+        // Saga Kayma Animasyonu
         mainScreen.DOAnchorPos(new Vector2(screenWidth, 0), 0.6f).SetEase(Ease.OutCubic);
         backstoryPanel.DOAnchorPos(new Vector2(0, 0), 0.6f).SetEase(Ease.OutCubic);
     }
 
-    // Bilgi ekranýndaki geri okuna basýnca çalýþacak
+    // Bilgi ekranindaki geri okuna basinca calisacak   
     public void CloseBackstory()
     {
         // Sola (Eski yerine) Kayma Animasyonu
@@ -51,9 +51,9 @@ public class BackstoryManager : MonoBehaviour
 
     void UpdateBackstoryUI(SoulData data)
     {
-        nameText.text = data.soulName; // Ruhun ismini göster   
+        nameText.text = data.soulName; // Ruhun ismini goster   
         soulPortrait.sprite = data.baseSprite;
         backstoryText.text = data.fullBackstory;
-        coinText.text =/* "Ýyilik Parasý: " +*/ data.soulCoins.ToString();
+        coinText.text =/* "Iyilik Parasi: " +*/ data.soulCoins.ToString();
     }
 }

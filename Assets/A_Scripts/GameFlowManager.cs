@@ -1,48 +1,3 @@
-//using UnityEngine;
-//using System.Collections.Generic;
-
-//public class GameFlowManager : MonoBehaviour
-//{
-//    public List<SoulData> allSouls; // Oyundaki tüm ruhlarýn listesi
-//    private int currentSoulIndex = 0;
-
-//    public int currentDay = 1;
-//    public int soulsPerDay = 3; // Günde kaç ruh gelecek?
-
-//    void Start()
-//    {
-//        SpawnNextSoul();
-//    }
-
-//    public void NextStep()
-//    {
-//        currentSoulIndex++;
-
-//        if (currentSoulIndex < allSouls.Count)
-//        {
-//            // Gün kontrolü
-//            if (currentSoulIndex % soulsPerDay == 0)
-//            {
-//                currentDay++;
-//                Debug.Log("Yeni Gün Baþladý: " + currentDay);
-//                // Burada "Gün X" yazan bir UI paneli gösterebilirsin
-//            }
-
-//            SpawnNextSoul();
-//        }
-//        else
-//        {
-//            Debug.Log("Oyun Bitti! Sonuçlar listeleniyor...");
-//            // Final panelini açma kodu buraya gelecek
-//        }
-//    }
-
-//    void SpawnNextSoul()
-//    {
-//        FindAnyObjectByType<DialogueManager>().LoadSoul(allSouls[currentSoulIndex]);
-//    }
-//}
-
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,11 +6,11 @@ using TMPro;
 public class GameFlowManager : MonoBehaviour
 {
     [Header("HUD (Oyun Ýçi Ekran)")]
-    public TextMeshProUGUI hudCoinText; // Sol üstte veya sað üstte duracak para metni
+    public TextMeshProUGUI hudCoinText; // Sol ustte veya sag ustte duracak para metni
 
     [Header("Geliþ Sýrasý")]
-    public List<SoulData> initialSouls; // Oyun baþýnda hazýr olanlar
-    private List<SoulData> activeQueue = new List<SoulData>(); // O gün gelecekler
+    public List<SoulData> initialSouls; // Oyun basinda hazir olanlar
+    private List<SoulData> activeQueue = new List<SoulData>(); // O gun gelecekler
     private Dictionary<int, List<SoulData>> futureSouls = new Dictionary<int, List<SoulData>>();
 
     [Header("Ekonomi")]
@@ -71,14 +26,14 @@ public class GameFlowManager : MonoBehaviour
 
     void Start()
     {
-        UpdateHUD(); // Oyun baþlarken parayý yazdýr
+        UpdateHUD(); // Oyun baslarken parayi yazdir
         activeQueue.AddRange(initialSouls.Take(SOULS_PER_DAY));
         StartDay();
     }
 
     public void ProcessDecision(SoulData soul, ChoiceLife choice)
     {
-        // ... ekonomi hesaplamalarý
+        // ... ekonomi hesaplamalari
 
         int gain = 0;
         string reportEntry = "";
@@ -86,23 +41,23 @@ public class GameFlowManager : MonoBehaviour
         if (soul.soulCoins >= choice.coinCost)
         {
             gain = 10 + (soul.soulCoins - choice.coinCost);
-            // Baþarýlý durumu yeþil yazdýralým
+            // Basarili durumu yesil yazdiralim
             reportEntry = $"<color=green>{soul.soulName}: Baþarýlý Eþleþme (+{gain})</color>";
         }
         else
         {
             gain = -5;
-            // Ceza durumunu kýrmýzý yazdýralým
+            // Ceza durumunu kirmizi yazdiralim
             reportEntry = $"<color=red>{soul.soulName}: Bütçe Yetersiz (-5)</color>";
         }
 
         dailyEarnings += gain;
         dailyReports.Add(reportEntry);
 
-        UpdateHUD(); // Her karar sonrasý ekrandaki parayý güncelle
+        UpdateHUD(); // Her karar sonrasi ekrandaki parayi guncelle
 
 
-        // Kararý listeye ekleyelim
+        // Karari listeye ekleyelim
         allPickedResults.Add(new SoulResult
         {
             soul = soul,
@@ -110,7 +65,7 @@ public class GameFlowManager : MonoBehaviour
             day = currentDay
         });
 
-        // Gelecek gün için ruh ekleme mantýðý
+        // Gelecek gun icin ruh ekleme mantigi
         if (choice.bonusSoul != null)
         {
             int targetDay = currentDay + choice.appearanceDayOffset;
