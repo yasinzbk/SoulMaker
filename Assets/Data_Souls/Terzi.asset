@@ -26,21 +26,26 @@ MonoBehaviour:
   - text: Ah... merhaba, ben Yuki.
     emotion: 0
     expression: {fileID: -42354882922023735, guid: 610009c93ffb5ea4a80c5bcde16f04d1, type: 3}
+    voiceLine: {fileID: 8300000, guid: d25af37ab5f11634e8d73db90778e5f5, type: 3}
   - text: "\u015Eey, biraz utanmazca olacak ama acaba bir \u015Fekilde k\u0131z\u0131m\u0131n
       yan\u0131nda tekrar reenkarne olma \u015Fans\u0131m var m\u0131?"
     emotion: 4
     expression: {fileID: -42354882922023735, guid: 610009c93ffb5ea4a80c5bcde16f04d1, type: 3}
+    voiceLine: {fileID: 8300000, guid: 6d740768ce2da2e4abd9433c191e7d64, type: 3}
   - text: "Muhtemelen \u015Fu an d\xFCnyada tek ba\u015F\u0131na kald\u0131, o evlatl\u0131k
       yani benden ba\u015Fka ona bakabilecek kimsesi yok... "
     emotion: 1
     expression: {fileID: -42354882922023735, guid: 610009c93ffb5ea4a80c5bcde16f04d1, type: 3}
+    voiceLine: {fileID: 8300000, guid: 9af5fa74fdc7dc54a934e663ab8fce09, type: 3}
   - text: "Ah, can\u0131m k\u0131z\u0131m. Acaba onun yan\u0131na d\xF6nmeme izin
       verir misiniz?"
     emotion: 4
     expression: {fileID: -42354882922023735, guid: 610009c93ffb5ea4a80c5bcde16f04d1, type: 3}
+    voiceLine: {fileID: 8300000, guid: d844f565e9889604b86d4336b965a4fd, type: 3}
   - text: "Herhangi bir \u015Fekilde ona faydam dokunacaksa her \u015Feye kabul\xFCm..."
     emotion: 1
     expression: {fileID: -42354882922023735, guid: 610009c93ffb5ea4a80c5bcde16f04d1, type: 3}
+    voiceLine: {fileID: 8300000, guid: a249b157e6b58244dbb7bb6973bff12c, type: 3}
   optionA:
     lifeLabel: 8
     lifeDescription: "K\u0131z\u0131n\u0131n yan\u0131nda bir k\xF6pek olarak yeniden

@@ -17,12 +17,17 @@ MonoBehaviour:
   fullBackstory: "DOLANDIRICININ TEK\u0130 D\u0130KKATL\u0130 OL"
   soulCoins: 5
   dialogueLines:
-  - text: "SELAMLARRR BENN SERDARR TEZCANNNN NAMID\u0130\u011EER BLACK MARKET"
+  - text: "SELAMLARRR BENN SERDARR TEZCANNNN DOLANDIRILAR KRALIYIM, hayat\u0131m\u0131n
+      son 30 y\u0131l\u0131nda blackmarketlik yap\u0131yorum"
     emotion: 0
     expression: {fileID: 5315003884038144493, guid: e126acd8d71f38345804b9ec47d6c06f, type: 3}
-  - text: "MALLARIMA G\xD6Z ATMAK \u0130STERM\u0130S\u0130N ??"
-    emotion: 0
+    voiceLine: {fileID: 8300000, guid: 2e53f6cae7007c542bf78e3dab4cdc90, type: 3}
+  - text: "Bazen bir okul \xE7\u0131k\u0131\u015F\u0131nda, bazense adliye koridorlar\u0131nda
+      bana her yerde rastlayabilirsiniz, \xE7eketimi a\xE7t\u0131m m\u0131 envai
+      \xE7e\u015Fit \xFCr\xFCne ula\u015Fabilirsiniz"
+    emotion: 3
     expression: {fileID: 8179892458493602980, guid: f2304ce7664feea448c58dba784a15bb, type: 3}
+    voiceLine: {fileID: 8300000, guid: d5058d277ba364b44874127a6fb533b1, type: 3}
   optionA:
     lifeLabel: 0
     lifeDescription: "Y\xFCr\xFC Git"

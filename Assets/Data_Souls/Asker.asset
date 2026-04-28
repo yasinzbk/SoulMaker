@@ -24,12 +24,15 @@ MonoBehaviour:
   - text: "Nagazakili Er Watanabe Tarik, emret komutan\u0131m!"
     emotion: 0
     expression: {fileID: -7582364231757599730, guid: 7ddedc18c90b61541bdd2ec9b5ba073e, type: 3}
+    voiceLine: {fileID: 8300000, guid: 68cb86699c3166e4b8c5c454987eb1b0, type: 3}
   - text: "...Ah, eski al\u0131\u015Fkanl\u0131klar, affedersin. "
     emotion: 3
     expression: {fileID: 7742508237215608095, guid: a9c2eead9f3a93743a1bab2ea3a6f80b, type: 3}
+    voiceLine: {fileID: 8300000, guid: 1564eaf309684254c9d6855c839fca75, type: 3}
   - text: "Reenkarne olmaya geldim, tabii siz nas\u0131l uygun g\xF6r\xFCrseniz efendim."
     emotion: 0
     expression: {fileID: -7582364231757599730, guid: 7ddedc18c90b61541bdd2ec9b5ba073e, type: 3}
+    voiceLine: {fileID: 8300000, guid: 34fe11e06b3529a4ba0072c3008f139f, type: 3}
   optionA:
     lifeLabel: 5
     lifeDescription: "Amerika'da orta h\xE2lli bir ailede yeniden do\u011F"
@@ -39,7 +42,7 @@ MonoBehaviour:
     endingSprite: {fileID: -7582364231757599730, guid: 7ddedc18c90b61541bdd2ec9b5ba073e, type: 3}
     endingText: "Tarik Amerika'da Afro-Amerikan olarak do\u011Fdu ve uzun bir s\xFCre
       \u0131rk\xE7\u0131l\u0131\u011Fa u\u011Frad\u0131, ama bir \u015Fekilde atlatmay\u0131
-      ba\u015Far\u0131p ba\u015Far\u0131l\u0131 bir vatanda\u015F oldu.\naaa\naaa\naaa\naaa\naaa\naaa\naaa\naa"
+      ba\u015Far\u0131p ba\u015Far\u0131l\u0131 bir vatanda\u015F oldu."
   optionB:
     lifeLabel: 5
     lifeDescription: "Afrika'da bir kabilede yeniden do\u011F"

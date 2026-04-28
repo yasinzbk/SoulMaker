@@ -23,6 +23,7 @@ public class DialogueLine
     [TextArea(3, 5)] public string text; // Ne söylüyor?
     public SoulEmotion emotion;          // Hangi duyguyla?
     public Sprite expression;      // O anki yüz ifadesi (Opsiyonel)
+    public AudioClip voiceLine; // Ruhun konuþma mýrýltýsý
 }
 
 [System.Serializable]

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
+  m_Name: Taylandli
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulName: Cherry Mintra
+  baseSprite: {fileID: -9145218261645930192, guid: c125e25a2bbd9ad4ca127408d912866b, type: 3}
+  fullBackstory: "Ge\xE7mi\u015F: Daha \xF6nce 2 kez reenkarne olmu\u015F ve \xF6nceki
+    hayat\u0131nda Tayland'da ya\u015Fayan bir ladyboy.\n\r\n\xD6l\xFCm \u015Fekli:
+    Silahla vurularak.\n\r\nSon s\xF6z\xFC: \"Dur, a\xE7\u0131klayabilirim.\""
+  soulCoins: 3
+  dialogueLines:
+  - text: "Selam yak\u0131\u015F\u0131kl\u0131. "
+    emotion: 0
+    expression: {fileID: -9145218261645930192, guid: c125e25a2bbd9ad4ca127408d912866b, type: 3}
+    voiceLine: {fileID: 8300000, guid: 358f60800a768804ea9dedfa67f39500, type: 3}
+  - text: "Benim ad\u0131m Mintra, ama sen bana Mint diyebilirsinnn..."
+    emotion: 4
+    expression: {fileID: 7640727967155693895, guid: 13e164cae0fbc4c449d246b81f052fd0, type: 3}
+    voiceLine: {fileID: 8300000, guid: ec30acddee39fd4489bf03ba66ca0b3a, type: 3}
+  - text: "Eee, yak\u0131\u015F\u0131kl\u0131, bana verecek g\xFCzel bir kaderin
+      var m\u0131? "
+    emotion: 1
+    expression: {fileID: 8839445792002841089, guid: 75a39c67eaa6b9b4388302785a6b1358, type: 3}
+    voiceLine: {fileID: 8300000, guid: 6476cebdc7e4a534d9375dfe153c6127, type: 3}
+  optionA:
+    lifeLabel: 8
+    lifeDescription: "Rusya'da orta gelirli bir ailede do\u011F"
+    coinCost: 3
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
+    endingSprite: {fileID: 8839445792002841089, guid: 75a39c67eaa6b9b4388302785a6b1358, type: 3}
+    endingText: "Rusya'da bir k\u0131z \xE7ocu\u011Fu olarak do\u011Far ve ortalama
+      bir hayat s\xFCrer. 15 ya\u015F\u0131nda LGBTQ olaylar\u0131ndan \xE7ok etkilenir
+      ve erkek gibi hissetti\u011Fini d\xFC\u015F\xFCn\xFCr; bu nedenle trans olmaya
+      karar verir. 30'lu ya\u015Flar\u0131nda orta ya\u015F krizine girer ve bunun
+      bir hata oldu\u011Funu fark eder. Hayat\u0131na s\u0131radan bir \u015Firket
+      \xE7al\u0131\u015Fan\u0131 olarak devam eder ve 90'lar\u0131na kadar ya\u015Fay\u0131p
+      ya\u015Fl\u0131l\u0131ktan hayata g\xF6zlerini yumar.)"
+  optionB:
+    lifeLabel: 3
+    lifeDescription: "Amerika'da Afro-Amerikan olarak do\u011F"
+    coinCost: 0
+    bonusSoul: {fileID: 0}
+    appearanceDayOffset: 0
+    endingSprite: {fileID: -9145218261645930192, guid: c125e25a2bbd9ad4ca127408d912866b, type: 3}
+    endingText: "Amerika Los Angeles'ta bir erkek olarak do\u011Fup 14'l\xFC ya\u015Flar\u0131nda
+      \xE7ete i\u015Flerine girer ve Crips (Mavililer / West Side) \xE7etesine kat\u0131l\u0131r.
+      20'lerinde Ice Cube, Dr. Dre, Snoop Dogg, 2Pac gibi \xFCnl\xFClerle yak\u0131n
+      arkada\u015F olur. 24 ya\u015F\u0131nda b\xFCy\xFCk bir \xE7ete sava\u015F\u0131
+      patlak verir ve bu esnada vurularak hayata g\xF6zlerini yumar."

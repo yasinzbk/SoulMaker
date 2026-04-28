@@ -106,6 +106,9 @@ public class DialogueManager : MonoBehaviour
             // Duyguya göre ruhu hareket ettir
             ApplyEmotion(line.emotion, line.expression);
 
+            // satira ait ses varsa çal
+            AudioManager.Instance.PlayVO(line.voiceLine);
+
             // Yazý yazma efekti
             dialogueText.text = "";
             isTyping = true;
@@ -155,6 +158,9 @@ public class DialogueManager : MonoBehaviour
         textTween.Kill();
         dialogueText.text = currentSoul.dialogueLines[lineIndex - 1].text;
         isTyping = false;
+
+        // Opsiyonel: Yazý tamamlanýnca sesin devam etmesini istemiyorsan durdurabilirsin
+        // AudioManager.Instance.StopVO();
     }
 
     void EndDialogue()

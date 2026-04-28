@@ -12,34 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68dcd5d31e684d4f8fa33d4ccd3de02, type: 3}
   m_Name: BasMelek
   m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulName: "Ba\u015F Melek"
+  soulName: "Ba\u015F Melek (Ruhun \u0130smi Burada G\xF6z\xFCk\xFCr)"
   baseSprite: {fileID: -8321102221490951993, guid: 323834de36860e643b9feb886df69d80, type: 3}
-  fullBackstory: "ANON\u0130M"
+  fullBackstory: "ANON\u0130M\n\nBurada sana gelecek olan ruhlar\u0131n, ge\xE7mi\u015F
+    hayatlar\u0131 hakk\u0131nda bilgi edinebilir ve onlara uygun karar\u0131 vermekte
+    kaynak olarak kullanabilirsin "
   soulCoins: 1
   dialogueLines:
   - text: "Merhaba! Sen yeni eleman olmal\u0131s\u0131n."
     emotion: 0
     expression: {fileID: 7417498029127908629, guid: 5e99eab02df607d4f89986b620c0b6f6, type: 3}
+    voiceLine: {fileID: 8300000, guid: 1fb2cdd20388ee2438201ae425401650, type: 3}
   - text: "Ho\u015F geldin... san\u0131r\u0131m. Neyse, bo\u015F lafa gerek yok,
       i\u015Fi k\u0131saca sana \xF6zetleyece\u011Fim."
     emotion: 0
     expression: {fileID: 545875093725613961, guid: 7374b5f07dd529a4f8daa5f5f8e38c56, type: 3}
+    voiceLine: {fileID: 8300000, guid: c97b58ba4a39cfc4eba1ab9d4e8f8b20, type: 3}
   - text: "Ah... bir de ba\u015Flamadan \xF6nce neden burada oldu\u011Funa az\u0131c\u0131k
       de\u011Finmem gerek."
-    emotion: 0
+    emotion: 3
     expression: {fileID: 3432582381386852895, guid: 5c06c27a70709b54990484fa39e28bf4, type: 3}
+    voiceLine: {fileID: 8300000, guid: d952b62f6e4df80498b3990fb3b525f5, type: 3}
   - text: "Resmi bir Kadim Yarg\u0131\xE7 olmadan \xF6nce 3 g\xFCnl\xFCk bir de\u011Ferlendirme
       s\xFCrecine gireceksin."
     emotion: 0
     expression: {fileID: 7417498029127908629, guid: 5e99eab02df607d4f89986b620c0b6f6, type: 3}
+    voiceLine: {fileID: 8300000, guid: 85d43f4e013cdfc47a3b1264de7ae261, type: 3}
   - text: "Bu 3 g\xFCn\xFCn sonunda seni kontrole gelece\u011Fim ve kal\u0131c\u0131
       \xE7al\u0131\u015Fan m\u0131 olacaks\u0131n yoksa kovulacak m\u0131s\u0131n,
       ona karar verece\u011Fim."
-    emotion: 0
+    emotion: 1
     expression: {fileID: 545875093725613961, guid: 7374b5f07dd529a4f8daa5f5f8e38c56, type: 3}
+    voiceLine: {fileID: 8300000, guid: 45c18aeeeb7c45d40980e97ead7ebbc0, type: 3}
   - text: "Hah, umar\u0131m kovulmazs\u0131n \xE7aylak..."
     emotion: 0
     expression: {fileID: 438895471204581479, guid: 70fee714446d01b448ba3fe8ced06a77, type: 3}
+    voiceLine: {fileID: 8300000, guid: 3c476607ca677c74b9eec838434b1852, type: 3}
   optionA:
     lifeLabel: 0
     lifeDescription: "Devam Etmek \u0130\xE7in T\u0131kla"

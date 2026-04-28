@@ -29,24 +29,31 @@ MonoBehaviour:
   - text: "Hey, buralarda bir yerde bir iskelet g\xF6rd\xFCn m\xFC?"
     emotion: 2
     expression: {fileID: 4032518421764823770, guid: 4c6f2912b80cb6241aa51f3c2e8258f8, type: 3}
+    voiceLine: {fileID: 8300000, guid: 494923872770051458962b1380f69b48, type: 3}
   - text: "...Peki, ba\u015Fka bir \u015Fey deneyelim"
     emotion: 0
     expression: {fileID: 4032518421764823770, guid: 4c6f2912b80cb6241aa51f3c2e8258f8, type: 3}
+    voiceLine: {fileID: 8300000, guid: 0e11828fb0eb83d4b8b807437df9d173, type: 3}
   - text: If judge is your power, what are you without it?
     emotion: 0
     expression: {fileID: 2496706940429432757, guid: 8bc2c428937c310428f045146647f71a, type: 3}
+    voiceLine: {fileID: 8300000, guid: e440af5fd78f3784c838103d458bdf87, type: 3}
   - text: ..Agh, cevap vermeni beklemiyordum zaten...
     emotion: 2
     expression: {fileID: 4032518421764823770, guid: 4c6f2912b80cb6241aa51f3c2e8258f8, type: 3}
+    voiceLine: {fileID: 8300000, guid: 2583c319a63db8e40a9059d4a9013024, type: 3}
   - text: "Fazla sessiz de\u011Fil misin?"
     emotion: 0
     expression: {fileID: 4032518421764823770, guid: 4c6f2912b80cb6241aa51f3c2e8258f8, type: 3}
+    voiceLine: {fileID: 8300000, guid: 87a59dbc41d175d43bde8903907bb607, type: 3}
   - text: "Neyse, burada mutlak karar mercii sensin, bana s\xF6z d\xFC\u015Fmez... "
     emotion: 0
     expression: {fileID: 4032518421764823770, guid: 4c6f2912b80cb6241aa51f3c2e8258f8, type: 3}
+    voiceLine: {fileID: 8300000, guid: 377f23d865c926643a5d0dbe15a3c451, type: 3}
   - text: "mi acaba? ...Neyse ne, hadi karar\u0131n\u0131 ver."
     emotion: 0
     expression: {fileID: 4032518421764823770, guid: 4c6f2912b80cb6241aa51f3c2e8258f8, type: 3}
+    voiceLine: {fileID: 8300000, guid: 7fa0315e933ab0e48a075ad14b2a8b72, type: 3}
   optionA:
     lifeLabel: 3
     lifeDescription: "\xC7in'de bir k\u0131z \xE7ocu\u011Fu olarak do\u011F"

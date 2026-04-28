@@ -22,9 +22,11 @@ MonoBehaviour:
   - text: 'Wiikkk, wik wiikk wik wikk wiiikkk wiwik. '
     emotion: 2
     expression: {fileID: 6503322928917484476, guid: fd9e63c5172a30443b009c0078d94076, type: 3}
+    voiceLine: {fileID: 8300000, guid: 5b41ebbb94046334ca8a1d4afaa6ecec, type: 3}
   - text: Wikkiwik wiwi wiwiwik wikkk, wiwik wiik wiwik.
     emotion: 1
     expression: {fileID: -9094450571771943257, guid: c6d096b1f170d7149b319004c09526f2, type: 3}
+    voiceLine: {fileID: 8300000, guid: bbbda8ae98934724b82e92a789fba05c, type: 3}
   optionA:
     lifeLabel: 1
     lifeDescription: "Bir sokak kedisi olarak yeniden do\u011F"

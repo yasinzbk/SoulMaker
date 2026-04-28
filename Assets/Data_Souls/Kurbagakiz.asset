@@ -22,12 +22,15 @@ MonoBehaviour:
   - text: "Mewhaba, wrak \u2014 a, pardon. "
     emotion: 0
     expression: {fileID: -4825247317447833179, guid: bf2f3b44877b98849a8e1c463dee7f61, type: 3}
+    voiceLine: {fileID: 8300000, guid: 991257609c5ce784ea432d804a396171, type: 3}
   - text: "\u015Eey, reenkarne olmaya geldim de... iiii, m\xFCmk\xFCnse \xC7in olmas\u0131n..."
     emotion: 0
     expression: {fileID: 9103029724409692841, guid: 8e0927f7fd569e74f813d62da09f06c5, type: 3}
+    voiceLine: {fileID: 8300000, guid: f03ed6a9f8066904c8287d7f53c8d543, type: 3}
   - text: "\xC7inli \xE7ocuklardan nefret ediyorum..."
     emotion: 1
     expression: {fileID: -7442742369925825077, guid: bdef9e4cb7049da4ebabbcb39f987426, type: 3}
+    voiceLine: {fileID: 8300000, guid: 2c7c8ad7ee8478e429b98c77e9530e2c, type: 3}
   optionA:
     lifeLabel: 0
     lifeDescription: "\xC7in'de fakir bir ailede insan olarak yeniden do\u011F "

@@ -23,8 +23,8 @@ public class DecisionManager : MonoBehaviour
     [SerializeField] private GameObject scrollsRoot; // Parþömenlerin ana tutucusu
     [SerializeField] private RectTransform scrollARect; // Sol parþömen Rect
     [SerializeField] private RectTransform scrollBRect; // Sað parþömen Rect
-    [SerializeField] private TextMeshProUGUI scrollALabel; // Sol parþömen TMP
-    [SerializeField] private TextMeshProUGUI scrollBLabel; // Sað parþömen TMP
+    //[SerializeField] private TextMeshProUGUI scrollALabel; // Sol parþömen TMP
+    //[SerializeField] private TextMeshProUGUI scrollBLabel; // Sað parþömen TMP
 
     [SerializeField] private TextMeshProUGUI scrollACoin; // Sol parþömen TMP
     [SerializeField] private TextMeshProUGUI scrollBCoin; // Sað parþömen TMP
@@ -128,8 +128,8 @@ public class DecisionManager : MonoBehaviour
         columnButton.gameObject.SetActive(false); // Butonu kapat
 
         // Parþömen yazýlarýný SO'dan yükle
-        scrollALabel.text = currentSoulData.optionA.lifeLabel;
-        scrollBLabel.text = currentSoulData.optionB.lifeLabel;
+        //scrollALabel.text = currentSoulData.optionA.lifeLabel;
+        //scrollBLabel.text = currentSoulData.optionB.lifeLabel;
 
         scrollACoin.text = currentSoulData.optionA.coinCost.ToString();
         scrollBCoin.text = currentSoulData.optionB.coinCost.ToString();

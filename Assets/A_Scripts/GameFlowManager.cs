@@ -40,15 +40,19 @@ public class GameFlowManager : MonoBehaviour
 
         if (soul.soulCoins >= choice.coinCost)
         {
-            gain = 10 + (soul.soulCoins - choice.coinCost);
+            gain = (soul.soulCoins - choice.coinCost);
+            int reward = 1; // Her baþarýlý seçim için 1 ödül verelim
             // Basarili durumu yesil yazdiralim
-            reportEntry = $"<color=green>{soul.soulName}: Baþarýlý Eþleþme (+{gain})</color>";
+            reportEntry = $"<color=green>{soul.soulName}: Baþarýlý Eþleþme (+{gain})  ve (+{reward} ödül) </color>";
+
+            gain += reward; // Kazancý ödülle birlikte güncelle
+
         }
         else
         {
-            gain = -5;
-            // Ceza durumunu kirmizi yazdiralim
-            reportEntry = $"<color=red>{soul.soulName}: Bütçe Yetersiz (-5)</color>";
+            gain = (soul.soulCoins - choice.coinCost);
+            // Ceza durumunu kirmizi yazdiralim, bizim verdigimiz para
+            reportEntry = $"<color=red>{soul.soulName}: Bütçe Yetersiz ({gain})</color>";
         }
 
         dailyEarnings += gain;

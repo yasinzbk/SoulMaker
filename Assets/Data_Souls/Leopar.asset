@@ -24,30 +24,39 @@ MonoBehaviour:
   - text: Sen... bir memur musun?
     emotion: 0
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 1808f86ac8461fb4681d9b6e8a40f1cb, type: 3}
   - text: "burnunu \xE7eker) Anl\u0131yorum, bizim gibi bir fani de\u011Filsin yani."
     emotion: 3
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 2df7be2112fe6db4fbe47e54bae8da80, type: 3}
   - text: "Daha \xF6nce hi\xE7 kadim yarg\u0131\xE7 g\xF6rmemi\u015Ftim\u2026"
     emotion: 3
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 4ebb3538640a448429128e121aaa9aec, type: 3}
   - text: "Hmm, bu arada bu diyarda koku duyumu bozan bir g\xFC\xE7 var."
     emotion: 4
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 3ad14c8b7d15db54f82629be890ed8e7, type: 3}
   - text: "Az \xF6nce seni koklad\u0131\u011F\u0131mda daha farkl\u0131 kokuyordun..."
     emotion: 0
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 05c52f7a415dad04e88dfc44319bc32b, type: 3}
   - text: "Yoksa bu, siz \xF6l\xFCms\xFCzlere \xF6zel bir yetenek mi?"
     emotion: 0
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 1a3c228df74dbc347a578074646f1d8d, type: 3}
   - text: " Neyse, buraya bir kez daha do\u011Fmaya geldim."
     emotion: 0
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: b003526004bcc934a888212676cefbd1, type: 3}
   - text: "K\xFCllerimden... yeniden do\u011Fmaya."
     emotion: 0
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 8300000, guid: 2f57bcfe489117d4db8afc5f6761b1e8, type: 3}
   - text: "Bana yolu g\xF6ster, Yarg\u0131\xE7."
     emotion: 0
     expression: {fileID: 7725894956269620233, guid: b04cc4c54db87bc46b2e23a642037a0f, type: 3}
+    voiceLine: {fileID: 0}
   optionA:
     lifeLabel: 12
     lifeDescription: "Onu bir Battle Beast olarak yeniden canland\u0131r "
